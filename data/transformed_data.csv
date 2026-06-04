@@ -1,0 +1,6 @@
+id,name,age,salary,department,annual_bonus
+1,Alice,30.0,50000,HR,5000.0
+2,Bob,25.0,60000,IT,6000.0
+3,Charlie,29.0,70000,IT,7000.0
+4,Diana,28.0,50000,HR,5000.0
+5,Eve,35.0,0,FINANCE,0.0
