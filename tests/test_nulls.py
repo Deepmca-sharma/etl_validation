@@ -1,4 +1,8 @@
 # Columns that must NEVER be null in the final output
+import pytest
+
+@pytest.mark.sanity
+@pytest.mark.bvt
 NOT_NULL_COLUMNS = ['id', 'name', 'age', 'salary', 'department']
 
 def test_no_nulls_in_required_columns(transformed_df):
@@ -8,7 +12,7 @@ def test_no_nulls_in_required_columns(transformed_df):
         assert null_count == 0, (
             f"Column '{col}' has {null_count} null value(s) after transformation"
         )
-
+@pytest.mark.regression
 def test_age_null_filled_with_median(source_df, transformed_df):
     """Specifically verify that missing ages were filled, not dropped."""
     original_nulls = source_df['age'].isnull().sum()
