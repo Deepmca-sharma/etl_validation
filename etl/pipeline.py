@@ -8,10 +8,12 @@ def extract(filepath: str) -> pd.DataFrame:
 def transform(df: pd.DataFrame) -> pd.DataFrame:
     """Clean and transform the data."""
     # Remove duplicate rows
-    df = df.drop_duplicates()
+    ## I HAVE COMMENTED THE BELOW LINE TO FAIL THE DUPLICATE TEST, TO PASS THAT TEST UNCOMMENT THIS LINE (#df = df.drop_duplicates())
+    #df = df.drop_duplicates()
 
     # Fill missing ages with the median
-    df['age'] = df['age'].fillna(df['age'].median())
+    ## I HAVE COMMENTED THE BELOW LINE TO FAIL THE MISSING OR NULL AGE TEST, TO PASS THAT TEST UNCOMMENT THIS LINE (#df['age'] = df['age'].fillna(df['age'].median()))
+    #df['age'] = df['age'].fillna(df['age'].median())
 
     # Normalize text: strip whitespace, lowercase department
     df['name'] = df['name'].str.strip()

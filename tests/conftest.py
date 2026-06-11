@@ -23,4 +23,4 @@ def transformed_df(source_df):
     df = transform(source_df.copy())
     load(df, OUTPUT_PATH)
     return df
-scope="session"
+#scope="session"

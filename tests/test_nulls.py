@@ -1,10 +1,10 @@
 # Columns that must NEVER be null in the final output
 import pytest
 
+
+NOT_NULL_COLUMNS = ['id', 'name', 'age', 'salary', 'department']
 @pytest.mark.sanity
 @pytest.mark.bvt
-NOT_NULL_COLUMNS = ['id', 'name', 'age', 'salary', 'department']
-
 def test_no_nulls_in_required_columns(transformed_df):
     """Each required column must have zero null values."""
     for col in NOT_NULL_COLUMNS:

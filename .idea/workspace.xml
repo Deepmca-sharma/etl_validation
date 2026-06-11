@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d29e879-a314-4575-8595-d25f435d816e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run_tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/etl_validation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/etl_validation.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_business_rules.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_business_rules.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/transformed_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/transformed_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etl/pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/etl/pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_duplicates.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_duplicates.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_nulls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_nulls.py" afterDir="false" />
     </list>

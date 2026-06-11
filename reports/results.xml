@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="5" skipped="0" tests="8" time="0.253" timestamp="2026-06-11T18:39:45.163558+05:30" hostname="DESKTOP-5ST1HM3"><testcase classname="tests.test_business_rules" name="test_salary_must_be_positive" time="0.031"><failure message="AssertionError: 1 rows have invalid salary:&#10;     id name  salary&#10;  5   5  Eve       0&#10;assert 1 == 0&#10; +  where 1 = len(   id name   age  salary department  annual_bonus\n5   5  Eve  35.0       0    FINANCE           0.0)">tests\test_business_rules.py:6: in test_salary_must_be_positive
+    assert len(invalid) == 0, (
+E   AssertionError: 1 rows have invalid salary:
+E        id name  salary
+E     5   5  Eve       0
+E   assert 1 == 0
+E    +  where 1 = len(   id name   age  salary department  annual_bonus\n5   5  Eve  35.0       0    FINANCE           0.0)</failure></testcase><testcase classname="tests.test_business_rules" name="test_age_within_valid_range" time="0.001" /><testcase classname="tests.test_business_rules" name="test_department_values_are_valid" time="0.004" /><testcase classname="tests.test_business_rules" name="test_annual_bonus_is_10_percent_of_salary" time="0.008" /><testcase classname="tests.test_duplicates" name="test_no_duplicate_rows" time="0.006"><failure message="AssertionError: Found 1 fully duplicate rows&#10;assert np.int64(1) == 0">tests\test_duplicates.py:8: in test_no_duplicate_rows
+    assert duplicate_count == 0, (f"Found {duplicate_count} fully duplicate rows")
+E   AssertionError: Found 1 fully duplicate rows
+E   assert np.int64(1) == 0</failure></testcase><testcase classname="tests.test_duplicates" name="test_no_duplicate_ids" time="0.001"><failure message="AssertionError: Duplicate IDs found: [2]&#10;assert 1 == 0&#10; +  where 1 = len([2])">tests\test_duplicates.py:13: in test_no_duplicate_ids
+    assert len(duplicate_ids) == 0, (f"Duplicate IDs found: {duplicate_ids}")
+E   AssertionError: Duplicate IDs found: [2]
+E   assert 1 == 0
+E    +  where 1 = len([2])</failure></testcase><testcase classname="tests.test_nulls" name="test_no_nulls_in_required_columns" time="0.001"><failure message="AssertionError: Column 'age' has 1 null value(s) after transformation&#10;assert np.int64(1) == 0">tests\test_nulls.py:12: in test_no_nulls_in_required_columns
+    assert null_count == 0, (
+E   AssertionError: Column 'age' has 1 null value(s) after transformation
+E   assert np.int64(1) == 0</failure></testcase><testcase classname="tests.test_nulls" name="test_age_null_filled_with_median" time="0.001"><failure message="AssertionError: 1 null ages in source were NOT filled&#10;assert np.int64(1) == 0">tests\test_nulls.py:21: in test_age_null_filled_with_median
+    assert remaining_nulls == 0, (
+E   AssertionError: 1 null ages in source were NOT filled
+E   assert np.int64(1) == 0</failure></testcase></testsuite></testsuites>
