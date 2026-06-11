@@ -8,10 +8,11 @@
 // ─────────────────────────────────────────────────
 
 pipeline {
-    agent any // run on any available Jenkins machine
+    agent any
     tools {
-        python 'Python3'   // matches the name you set in Tools
+    jenkins.plugins.shiningpanda.tools.PythonInstallation 'Python3'
     }
+
 
     parameters {
         // This creates a dropdown in Jenkins UI
