@@ -8,7 +8,10 @@
 // ─────────────────────────────────────────────────
 
 pipeline {
-    agent any  // run on any available Jenkins machine
+    agent any // run on any available Jenkins machine
+    tools {
+        python 'Python3'   // matches the name you set in Tools
+    }
 
     parameters {
         // This creates a dropdown in Jenkins UI
@@ -36,7 +39,7 @@ pipeline {
             steps {
                 // Installs everything in your requirements.txt
                 // Same as typing: pip install -r requirements.txt
-                bat 'pip install -r requirements.txt'
+                bat 'python -m pip install -r requirements.txt'
             }
         }
 
