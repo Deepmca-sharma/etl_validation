@@ -54,7 +54,8 @@ pipeline {
                 // This is the only important line —
                 // calls YOUR Python script with the chosen suite
                 // Example: python run_tests.py all
-                bat "python run_tests.py ${params.TEST_SUITE}"
+                //I commented this and added BELOW LINE bat "python run_tests.py ${params.TEST_SUITE}"
+                bat "python -m pytest tests/ -v -m ${params.TEST_SUITE}"
             }
         }
     }
